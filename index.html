@@ -9,31 +9,58 @@
 </head>
 
 <body>
-    <h1>Prisoner's Dilemma</h1>
-    <p>The Prisoner's Dilemma is a famous problem in game theory that shows how two individuals might not cooperate,
-        even if it seems in their best interest to do so. </p>
-    <h2>The Story</h2>
-    <p>
-        Two people are arrested for a crime. They are questioned separately and cannot communicate.
-        They have two choices: <strong>Cooperate</strong> (stay silent) or <strong>Defect</strong> (betray the other).
-    </p>
+    <header>
+        <h1>Prisoner's Dilemma</h1>
+    </header>
+    <main>
 
-    <ul>
-        <li>If both cooperate: each gets 2 years in prison.</li>
-        <li>If one defects while the other cooperates: the defector goes free, and the cooperator gets 5 years.</li>
-        <li>If both defect: each gets 4 years.</li>
-    </ul>
+        <p>The Prisoner's Dilemma is a famous problem in game theory that shows how two individuals might not cooperate,
+            even if it seems in their best interest to do so. </p>
+        <h2>The Story</h2>
+        <p>
+            Two people are arrested for a crime. They are questioned separately and cannot communicate.
+            They have two choices: <strong>Cooperate</strong> (stay silent) or <strong>Defect</strong> (betray the
+            other).
+        </p>
 
-    <p>
-        The logic: betraying seems better no matter what the other does — but if both betray, they both do worse than if
-        both had cooperated.
-    </p>
+        <ul>
+            <li>If both cooperate: each gets 2 years in prison.</li>
+            <li>If one defects while the other cooperates: the defector goes free, and the cooperator gets 5 years.</li>
+            <li>If both defect: each gets 4 years.</li>
+        </ul>
 
-    <h2>Play the Game</h2>
-    <p>You both will play for 10 rounds and your goal is to get more points than your opponent.</p>
-    <p>Choose by clicking on</p>
+        <p>
+            The logic: betraying seems better no matter what the other does — but if both betray, they both do worse
+            than if
+            both had cooperated.
+        </p>
+
+        <h2>Play the Game</h2>
+        <p>You both will play for 10 rounds and your goal is to get more points than your opponent. Numbers indicate how many points you will get</p>
+        <p>Player on the left is controlled by <strong>Q</strong> (for cooperation) and <strong>A</strong> (for
+            deflection)</p>
+        <p>Player on the right is controlled by <strong>P</strong> (for cooperation) and <strong>L</strong> (for
+            deflection)</p>
 
 
+
+        <div class="playground">
+            
+            <div id="game">
+                <div id="diamond">
+                    <div class="cell cell1"></div>
+                    <div class="cell cell2"></div>
+                    <div class="cell cell3"></div>
+                    <div class="cell cell4"></div>
+                </div>
+            </div>
+            
+        </div>
+        
+
+
+
+    </main>
 
 
 
