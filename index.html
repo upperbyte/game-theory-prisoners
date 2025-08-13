@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prisoner's Dilemma game</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="play_style.css">
 </head>
 
 <body>
@@ -36,16 +37,31 @@
         </p>
 
         <h2>Play the Game</h2>
-        <p>You both will play for 10 rounds and your goal is to get more points than your opponent. Numbers indicate how many points you will get</p>
+        <p>You both will play for 10 rounds and your goal is to get more points than your opponent. Numbers indicate how
+            many points you will get</p>
         <p>Player on the left is controlled by <strong>Q</strong> (for cooperation) and <strong>A</strong> (for
             deflection)</p>
         <p>Player on the right is controlled by <strong>P</strong> (for cooperation) and <strong>L</strong> (for
             deflection)</p>
 
 
+        <div id="field">
+            <div id="bar">
+                <div id="choice1">
+                    <button id="p1good">cooperate</button>
+                    <button id="p1bad">betray</button>
+                </div>
+                <div id="choice2">
+                    <button id="p2good">cooperate</button>
+                    <button id="p2bad">betray</button>
+                </div>
+            </div>
+
+        </div>
+
 
         <div class="playground">
-            
+
             <div id="game">
                 <div id="diamond">
                     <div class="cell cell1"></div>
@@ -54,9 +70,9 @@
                     <div class="cell cell4"></div>
                 </div>
             </div>
-            
+
         </div>
-        
+
 
 
 

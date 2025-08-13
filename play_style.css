@@ -1,0 +1,81 @@
+
+.playground {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+
+
+    width: 100dvw;
+    height: 100dvh;
+}
+
+
+
+#game {
+    /* visibility: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: gold;
+    width: min(500px);
+
+    /* width: 10 */
+    height: min(500px);
+
+}
+
+#diamond {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    transform: rotate(45deg);
+    background-color: blue;
+
+    width: min(300px);
+    height: min(300px);
+
+
+}
+
+.cell {
+    padding: 5px;
+    /* background-color: burlywood; */
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+
+    
+}
+
+.cell::before,
+.cell::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.cell::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    /* Upper-right triangle */
+}
+
+.cell::after {
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+    /* Lower-left triangle */
+}
+
+
+.cell::after {background: #7dd3fc;}
+.cell::before {background: #fda4af;}
+
+/* .cell1::after{content: "";} */
